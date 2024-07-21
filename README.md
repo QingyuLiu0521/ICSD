@@ -8,7 +8,13 @@ This is the official repository for the **ICSD** dataset.
 ## About ⭐️
 🎤 **ICSD** is a comprehensive audio event dataset for infant cry and snoring detection with the following features:
 - containing over *3.3* hours of strongly labeled data and *1* hour of weakly labeled data;
-- containing source materials for generating synthetic data
+- containing foreground events and background events for generating synthetic data
+
+The figure below shows the organized structure of the ICSD dataset where audio files are stored in the audio folder and event time-stamp annotations in the metadata folder, each further categorized into train, validation, and test subfolders. Moreover, source materials for generating synthetic strongly labeled data are also provided. You can use *[Scaper](https://github.com/justinsalamon/scaper)* to generate your own synthetic data.
+
+<div style="margin: 0 auto; width: 50%;">
+  <img src="folder.png" alt="folder">
+</div>
   
 Detailed description for the dataset could be found in our [paper](https://arxiv.org/abs/2407.05361).
 
@@ -31,6 +37,7 @@ We acknowledge the wonderful work by these excellent developers!
 - ESC-50: [karolpiczak/ESC-50](https://github.com/karolpiczak/ESC-50)
 - SINS: [KULeuvenADVISE/SINS_database](https://github.com/KULeuvenADVISE/SINS_database)
 - MUSAN: [MUSAN-openslr.org](https://www.openslr.org/17/)
+- Scaper: [justinsalamon/scaper](https://github.com/justinsalamon/scaper)
 
 
 ## Reference 📖
