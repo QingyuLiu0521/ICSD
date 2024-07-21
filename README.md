@@ -13,7 +13,7 @@ This is the official repository for the **ICSD** dataset.
 The figure below shows the organized structure of the ICSD dataset where audio files are stored in the audio folder and event time-stamp annotations in the metadata folder, each further categorized into train, validation, and test subfolders. Moreover, source materials for generating synthetic strongly labeled data are also provided. You can use *[Scaper](https://github.com/justinsalamon/scaper)* to generate your own synthetic data.
 
 <div align=center>
-  <img src="folder.png" alt="folder">
+  <img src="folder.png" alt="folder" style="width: 40%">
 </div>
   
 Detailed description for the dataset could be found in our [paper](https://arxiv.org/abs/2407.05361).
