@@ -18,7 +18,7 @@ Detailed description for the dataset could be found in our [paper](https://arxiv
 
 <!-- This following README will introduce the usage guide of the corresponded code. -->
 
-## Run the Baseline system 
+## Run the Baseline system 👨‍💻
 ...
 
 ## Acknowledgement 🔔
