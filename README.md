@@ -25,7 +25,7 @@ Detailed description for the dataset could be found in our [paper]().
 <!-- This following README will introduce the usage guide of the corresponded code. -->
 
 ## Data Preview 🔍
-The demo folder provides four aaudio samples that you can download and listen to.
+The demo folder provides four audio samples that you can download and listen to.
 
 ## Run the Baseline system 👨‍💻
 ...
