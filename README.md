@@ -16,7 +16,7 @@ The figure below shows the organized structure of the ICSD dataset where audio f
   <img src="folder.png" alt="folder" style="width: 55%">
 </div>
   
-Detailed description for the dataset could be found in our [paper](https://arxiv.org/abs/2407.05361).
+Detailed description for the dataset could be found in our [paper]().
 
 *To use the ICSD dataset, you can download the audio files and metada from our provided source URL list on [HuggingFace](https://huggingface.co/datasets/QingyuLiu1/ICSD).*
 
