@@ -24,6 +24,25 @@ Detailed description for the dataset could be found in our [paper]().
 
 <!-- This following README will introduce the usage guide of the corresponded code. -->
 
+## Data Preview 🔍
+<table style="text-align: center; margin-left: auto; margin-right: auto;">
+  <tr>
+    <th style="text-align: center;"></th>
+    <th style="text-align: center;">Infant Cry</th>
+    <th style="text-align: center;">Snoring</th>
+  </tr>
+  <tr>
+    <td><b>Real Data</b></td>
+    <td><audio controls><source src="demo/Real_Infantcry.wav" type="audio/wav"></audio></td>
+    <td><audio controls><source src="demo/Real_Snoring.wav" type="audio/wav"></audio></td>
+  </tr>
+  <tr>
+    <td><b>Synthetic Data</b></td>
+    <td><audio controls><source src="demo/Synth_Infantcry.wav" type="audio/wav"></audio></td>
+    <td><audio controls><source src="demo/Synth_Snoring.wav" type="audio/wav"></audio></td>
+  </tr>
+</table>
+
 ## Run the Baseline system 👨‍💻
 ...
 
