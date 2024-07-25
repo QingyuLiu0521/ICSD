@@ -35,17 +35,41 @@ The script `conda_create_environment.sh` is available to create an environment w
 Download the dataset from [HuggingFace](https://huggingface.co/datasets/QingyuLiu1/ICSD) and decompress it under the `data` folder
 
 ### Training 👨‍💻
-Three baselines are provieded:
-- baseline with only *real* data
+Three baselines are provided:
+- baseline with only *synthetic* data
 - baseline with *real* data and *synthetic* data
 - baseline using *pre-trained* embedding
 
-#### 1. Baseline with only *real* data
+#### 1. Baseline with only *synthetic* data
+The baseline using the synthetic strongly labeled data can be run from scratch using the following command:
+
+`python train_sed.py`
+
+We provide a [pretrained checkpoint](https://huggingface.co/datasets/QingyuLiu1/ICSD). The baseline can be tested on the test set of the dataset using the following command:
+
+`python train_sed.py --test_from_checkpoint /path/to/synth_only.ckpt`
 
 #### 2. Baseline with *real* data and *synthetic* data
+The baseline using the real strongly labeled data and synthetic data can be run from scratch using the following command:
 
+`python train_sed.py --strong_real`
+
+The command will automatically considered the strong labeled data in the training process.
+
+We provide a [pretrained checkpoint](https://huggingface.co/datasets/QingyuLiu1/ICSD). The baseline can be tested on the test set of the dataset using the following command:
+
+`python train_sed.py --test_from_checkpoint /path/to/hybrid.ckpt`
 
 #### 3. Baseline using *pre-trained* embedding
+We added a baseline which exploits the pre-trained model [BEATs](https://arxiv.org/abs/2212.09058). It's an iterative self-supervised learning model designed to extract high-level non-speech audio semantics. The BEATs feature representations are integrated with the CNN output through a linear transformation and layer normalization, providing additional complementary information that can enhance sound event detection performance.
+
+To run this system, you should first pre-compute the embeddings using the following command: `python extract_embeddings.py --output_dir ./embeddings --pretrained_model "beats"`
+Then, use the following command to run the system:
+`train_pretrained.py`
+
+We provide a [pretrained checkpoint](https://huggingface.co/datasets/QingyuLiu1/ICSD). The baseline can be tested on the test set of the dataset using the following command:
+
+`python train_pretrained.py --test_from_checkpoint /path/to/BEATS.ckpt`
 
 ## Acknowledgement 🔔
 We acknowledge the wonderful work by these excellent developers!
