@@ -26,8 +26,26 @@ Detailed description for the dataset could be found in our [paper]().
 ## Data Preview 🔍
 The demo folder provides four audio samples that you can download and listen to.
 
-## Run the Baseline system 👨‍💻
-...
+## Baseline system 🖥️
+> We designed our baseline system based on DCASE 2023 Challenge task4
+### Requirements 📝
+The script `conda_create_environment.sh` is available to create an environment which runs the baseline code.
+
+### Data Download ⬇️
+Download the dataset from [HuggingFace](https://huggingface.co/datasets/QingyuLiu1/ICSD) and decompress it under the `data` folder
+
+### Training 👨‍💻
+Three baselines are provieded:
+- baseline with only *real* data
+- baseline with *real* data and *synthetic* data
+- baseline using *pre-trained* embedding
+
+#### 1. Baseline with only *real* data
+
+#### 2. Baseline with *real* data and *synthetic* data
+
+
+#### 3. Baseline using *pre-trained* embedding
 
 ## Acknowledgement 🔔
 We acknowledge the wonderful work by these excellent developers!
