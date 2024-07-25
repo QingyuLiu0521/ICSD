@@ -29,7 +29,7 @@ The demo folder provides four audio samples that you can download and listen to.
 ## Baseline system 🖥️
 > We designed our baseline system based on DCASE 2023 Challenge task4
 ### Requirements 📝
-The script `conda_create_environment.sh` is available to create an environment which runs the baseline code.
+The script `conda_create_environment.sh` is available to create an environment which runs the baseline system.
 
 ### Data Download ⬇️
 Download the dataset from [HuggingFace](https://huggingface.co/datasets/QingyuLiu1/ICSD) and decompress it under the `data` folder
