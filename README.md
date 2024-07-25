@@ -1,7 +1,6 @@
 ## ICSD: An Open-source Dataset for Infant Cry and Snoring Detection
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-COLOR.svg)]() 
 [![hf](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/QingyuLiu1/ICSD) 
-[![demo](https://img.shields.io/badge/WebPage-Demo-red)]()
 
 This is the official repository for the **ICSD** dataset. 
 
