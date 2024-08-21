@@ -91,7 +91,7 @@ If you use the ICSD dataset, please cite the following papers:
       title={ICSD: An Open-source Dataset for Infant Cry and Snoring Detection},
       author={Qingyu Liu, Longfei Song, Dongxing Xu, Yanhua Long},
       journal={arXiv},
-      volume={}
+      volume={abs/2408.10561}
       year={2024}
 }
 ```
