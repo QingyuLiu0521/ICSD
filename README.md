@@ -1,5 +1,5 @@
 ## ICSD: An Open-source Dataset for Infant Cry and Snoring Detection
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-COLOR.svg)]() 
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-COLOR.svg)](https://arxiv.org/pdf/2408.10561) 
 [![hf](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/QingyuLiu1/ICSD) 
 
 This is the official repository for the **ICSD** dataset. 
@@ -20,6 +20,8 @@ Detailed description for the dataset could be found in our [paper]().
 *To use the ICSD dataset, you can download the audio files and metada from our provided source URL list on [HuggingFace](https://huggingface.co/datasets/QingyuLiu1/ICSD).*
 
 *Please note that ICSD doesn't own the copyright of the audios; the copyright remains with the original owners of the video or audio.*
+
+**Please note that our paper has been submitted to the journal "Digital Signal Processing" and is currently under review. We will make all data publicly available once the paper is accepted.**
 
 <!-- This following README will introduce the usage guide of the corresponded code. -->
 
