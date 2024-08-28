@@ -21,7 +21,7 @@ Detailed description for the dataset could be found in our [paper]().
 
 *Please note that ICSD doesn't own the copyright of the audios; the copyright remains with the original owners of the video or audio.*
 
-**Please note that our paper has been submitted to the journal "Digital Signal Processing" and is currently under review. We will make all data publicly available once the paper is accepted.**
+**Please note that our paper is currently under review. We will make all data publicly available once the paper is accepted.**
 
 <!-- This following README will introduce the usage guide of the corresponded code. -->
 
