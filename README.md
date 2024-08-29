@@ -4,6 +4,8 @@
 
 This is the official repository for the **ICSD** dataset. 
 
+**Please note that our paper is currently under review. We will make all data publicly available once the paper is accepted.**
+
 ## About ⭐️
 🎤 **ICSD** is a comprehensive audio event dataset for infant cry and snoring detection with the following features:
 - containing over *3.3* hours of strongly labeled data and *1* hour of weakly labeled data;
@@ -20,8 +22,6 @@ Detailed description for the dataset could be found in our [paper]().
 *To use the ICSD dataset, you can download the audio files and metada from our provided source URL list on [HuggingFace](https://huggingface.co/datasets/QingyuLiu1/ICSD).*
 
 *Please note that ICSD doesn't own the copyright of the audios; the copyright remains with the original owners of the video or audio.*
-
-**Please note that our paper is currently under review. We will make all data publicly available once the paper is accepted.**
 
 <!-- This following README will introduce the usage guide of the corresponded code. -->
 
