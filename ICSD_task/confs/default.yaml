@@ -41,9 +41,9 @@ data: # change with your paths if different.
   strong_val_folder: "../data/audio/validation/strong_val/"  
   strong_val_tsv:  "../data/metadata/validation/strong_val.tsv" 
   strong_val_dur: "../data/metadata/validation/strong_val_durations.tsv"  
-  test_folder: "../data/audio/test/real_strong_test/" 
-  test_tsv: "../data/metadata/test/real_strong_test.tsv"  
-  test_dur: "../data/metadata/test/real_strong_test_durations.tsv"  
+  test_folder: "../data/audio/test/strong_test/"       # real testset: "../data/audio/test/real_strong_test/" 
+  test_tsv: "../data/metadata/test/test.tsv "          # real testset: "../data/metadata/test/real_strong_test.tsv"  
+  test_dur: "../data/metadata/test/test_durations.tsv" # real testset:"../data/metadata/test/real_strong_test_durations.tsv"  
   audio_max_len: 10
   fs: 16000
   net_subsample: 4
