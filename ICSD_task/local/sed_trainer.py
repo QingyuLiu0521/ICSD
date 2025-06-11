@@ -792,6 +792,18 @@ class SEDTask4(pl.LightningModule):
             os.path.join(save_dir, "teacher"),
         )[0]
 
+        seg_macro_student = log_sedeval_metrics(
+            self.decoded_student_05_buffer,
+            self.hparams["data"]["test_tsv"],
+            os.path.join(save_dir, "student"),
+        )[2]
+
+        seg_macro_teacher = log_sedeval_metrics(
+            self.decoded_teacher_05_buffer,
+            self.hparams["data"]["test_tsv"],
+            os.path.join(save_dir, "teacher"),
+        )[2]
+
         # synth dataset
         intersection_f1_macro_student = compute_per_intersection_macro_f1(
             {"0.5": self.decoded_student_05_buffer},
@@ -810,17 +822,9 @@ class SEDTask4(pl.LightningModule):
 
         results = {
             "hp_metric": best_test_result,
-            "test/student/psds1_psds_eval": psds1_student_psds_eval,
-            "test/student/psds1_sed_scores_eval": psds1_student_sed_scores_eval,
-            "test/student/psds2_psds_eval": psds2_student_psds_eval,
-            "test/student/psds2_sed_scores_eval": psds2_student_sed_scores_eval,
-            "test/teacher/psds1_psds_eval": psds1_teacher_psds_eval,
-            "test/teacher/psds1_sed_scores_eval": psds1_teacher_sed_scores_eval,
-            "test/teacher/psds2_psds_eval": psds2_teacher_psds_eval,
-            "test/teacher/psds2_sed_scores_eval": psds2_teacher_sed_scores_eval,
-            "test/student/event_f1_macro": event_macro_student,
+            "test/student/seg_f1_macro": seg_macro_student,
             "test/student/intersection_f1_macro": intersection_f1_macro_student,
-            "test/teacher/event_f1_macro": event_macro_teacher,
+            "test/teacher/seg_f1_macro": seg_macro_teacher,
             "test/teacher/intersection_f1_macro": intersection_f1_macro_teacher,
         }
         self.tracker_devtest.stop()
